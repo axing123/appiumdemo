@@ -16,10 +16,11 @@ public class CommonUtils {
                 .setAppPackage("com.example.demoappium")
                 .setAppActivity("com.example.demoappium.MainActivity")
                 .eventTimings();
-
+        //配置启动的app
         DesiredCapabilities desiredCapabilities=new DesiredCapabilities();
         desiredCapabilities.setCapability("deviceName","NAB5T20321010931");
         desiredCapabilities.setCapability("platformName","android");
+        desiredCapabilities.setCapability("automationName","Uiautomator2");
         desiredCapabilities.setCapability("appPackage","com.example.demoappium");
         desiredCapabilities.setCapability("appActivity","com.example.demoappium.MainActivity");
         try {
